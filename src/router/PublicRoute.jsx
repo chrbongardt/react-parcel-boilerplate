@@ -4,11 +4,11 @@ import AuthService from 'shared/services/AuthService'
 
 const authService = new AuthService()
 
-const LoginRoute = ({ component: Component, rest }) => (
+const PublicRoute = ({ component: Component, rest }) => (
   <Route {...rest}
     render={props =>
       authService.isAuthenticated() ? <Redirect to='/' /> : <Component {...props} />
     } />
 )
 
-export default LoginRoute
+export default PublicRoute
