@@ -1,14 +1,6 @@
-React boilerplate project based in parcel with simple authenticated routing, sass and absolute paths.
+React-redux boilerplate project build with parcel.
 
-# Prerequisits
-- Node 10.0.6
-
-## First step
-```sh
-$ npm install
-```
-
-## Development
+## For Development with hot reloading
 ```sh
 $ npm start
 ```

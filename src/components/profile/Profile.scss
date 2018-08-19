@@ -1,0 +1,13 @@
+.wrapper {
+    border: 1px solid black;
+    padding: 10px;
+}
+.details{
+    padding: 10px;
+    span.label{
+        font-weight: bold;
+    }
+    span.value{
+        margin-left: 5px;
+    }
+}
