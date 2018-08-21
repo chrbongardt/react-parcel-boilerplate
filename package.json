@@ -39,6 +39,8 @@
     "tap-summary": "^4.0.0"
   },
   "standard": {
-    "globals": [ "fetch" ]
+    "globals": [
+      "fetch"
+    ]
   }
 }

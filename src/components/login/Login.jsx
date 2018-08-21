@@ -12,7 +12,7 @@ class Login extends React.Component {
 
   login (e) {
     e.preventDefault()
-    this.dispatch({type: 'LOGIN_REQUEST', username: this.username.value, password: this.password.value})
+    this.dispatch({type: 'REQUEST_LOGIN', username: this.username.value, password: this.password.value})
   }
 
   render () {
