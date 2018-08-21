@@ -7,26 +7,26 @@ import PublicRoute from 'components/router/PublicRoute'
 import Profile from 'components/profile/Profile'
 import Login from 'components/login/Login'
 
-class Router extends Component{
-    constructor({dispatch}){
-        super()
-        this.dispatch = dispatch
-    }
+class Router extends Component {
+  constructor ({dispatch}) {
+    super()
+    this.dispatch = dispatch
+  }
 
-    componentWillMount(){
-        this.dispatch({type: 'CHECK_IF_AUTHORIZED'})
-    }
+  componentWillMount () {
+    this.dispatch({type: 'CHECK_IF_AUTHORIZED'})
+  }
 
-    render(){
-        return (
-            <BrowserRouter>
-                <Switch>
-                    <PublicRoute exact path='/' component={Login} />
-                    <PrivateRoute path='/profile' component={Profile} />
-                    <Redirect to='/' />
-                </Switch>
-            </BrowserRouter>
-        )
-    }
+  render () {
+    return (
+      <BrowserRouter>
+        <Switch>
+          <PublicRoute exact path='/' component={Login} />
+          <PrivateRoute path='/profile' component={Profile} />
+          <Redirect to='/' />
+        </Switch>
+      </BrowserRouter>
+    )
+  }
 }
 export default connect()(Router)

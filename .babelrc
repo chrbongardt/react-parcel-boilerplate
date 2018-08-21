@@ -1,9 +1,11 @@
 {
-  "presets": ["env", "react"],
-  "plugins": [
-    ["module-resolver", {
-      "root": ["./src"]
-    }],
-    "regenerator-transform"
-  ]
+    "presets": [
+        ["env", { "targets": { "browsers": "last 2 versions, > 1%" }, "debug": false, "useBuiltIns": true }], "react"
+    ],
+    "plugins": [
+        ["module-resolver", {
+            "root": ["./src"]
+        }],
+        "regenerator-transform"
+    ]
 }

@@ -7,28 +7,38 @@
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
-    "js-standard": "standard --fix"
+    "js-standard": "standard --fix",
+    "test": "babel-tape-runner test/**/*.js | tap-summary"
   },
   "dependencies": {
-    "parcel-bundler": "^1.9.7",
-    "postcss-modules": "^1.3.2",
+    "babel-polyfill": "^6.26.0",
+    "isomorphic-fetch": "^2.2.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.0",
-    "redux-saga": "^0.16.0",
-    "router": "^1.3.3",
-    "services": "0.0.3",
-    "shared": "^0.2.0"
+    "redux-saga": "^0.16.0"
   },
   "devDependencies": {
+    "autoprefixer": "^9.1.2",
     "babel-plugin-module-resolver": "^3.1.1",
-    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "babel-tape-runner": "^2.0.1",
+    "blue-tape": "^1.0.0",
+    "deep-freeze": "0.0.1",
+    "dotenv": "^6.0.0",
+    "fetch-mock": "^6.5.2",
+    "node-fetch": "^2.2.0",
     "node-sass": "^4.9.3",
+    "parcel-bundler": "^1.9.7",
+    "postcss-modules": "^1.3.2",
     "regenerator-transform": "^0.13.3",
-    "standard": "^11.0.1"
+    "standard": "^11.0.1",
+    "tap-summary": "^4.0.0"
+  },
+  "standard": {
+    "globals": [ "fetch" ]
   }
 }
